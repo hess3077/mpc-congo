@@ -43,3 +43,4 @@ var/cache/*
 .lesshst
 .gitconfig
 /nbproject/
+/stats/
