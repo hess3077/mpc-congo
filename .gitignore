@@ -44,3 +44,5 @@ var/cache/*
 .gitconfig
 /nbproject/
 /stats/
+/web/.user.ini
+/web/.infomaniak-maintenance.html
