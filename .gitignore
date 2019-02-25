@@ -27,6 +27,10 @@
 .subversion/
 .vim/
 .viminfo
+.node_repl_history
+.npm/
+.nvm/
+backend/
 HEAD
 composer.phar
 config/
