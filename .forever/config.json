@@ -1,0 +1,17 @@
+{
+  "root": "/home/clients/8515307966f23b9627349bad60dbb242/.forever",
+  "pidPath": "/home/clients/8515307966f23b9627349bad60dbb242/.forever/pids",
+  "sockPath": "/home/clients/8515307966f23b9627349bad60dbb242/.forever/sock",
+  "loglength": 100,
+  "logstream": false,
+  "columns": [
+    "uid",
+    "command",
+    "script",
+    "forever",
+    "pid",
+    "id",
+    "logfile",
+    "uptime"
+  ]
+}
