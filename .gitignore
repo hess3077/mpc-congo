@@ -14,10 +14,9 @@
 !var/SymfonyRequirements.php
 /vendor/
 /node_modules/
-/web/bundles/
-!/web/bundles/tvcongo
-/web/uploads/news/
-/web/css/
+!/web/.htaccess
+/web/*
+/tmp/
 .bash_history
 .composer/
 .profile
