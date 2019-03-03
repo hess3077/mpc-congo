@@ -29,6 +29,10 @@
 		padding: 0 10px;
 	}
 
+	ul.top-info li:first-child{
+		margin-left: -20px;
+	}
+
 	ul.top-info li{
 		margin-left: 10px;
 	}
@@ -115,7 +119,6 @@
 	}
 
 	ul.top-info li{
-		margin-left: 20px;
 		margin-bottom: 10px;
 	}
 
