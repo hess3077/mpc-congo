@@ -27,7 +27,7 @@ import { OurIdeasComponent } from './pages/our_ideas.component';
 
 
 const appRoutes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: '', component: HomeComponent },//
   { path: 'our_ideas', component: OurIdeasComponent },
 ];
 
