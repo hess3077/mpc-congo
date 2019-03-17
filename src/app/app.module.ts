@@ -22,13 +22,25 @@ import { NewsComponent } from './news/news.component';
 import { QuoteAreaComponent } from './container/quote-area/quote-area.component';
 import { ClientsComponent } from './clients/clients.component';
 import { FooterComponent } from './container/footer/footer.component';
+// Pages
 import { HomeComponent } from './pages/home.component';
 import { OurIdeasComponent } from './pages/our_ideas.component';
-
+import { YourContributionsComponent } from './pages/your_contributions.component';
+import { RehabComponent } from './pages/rehab.component';
+import { JoinUsComponent } from './pages/join_us.component';
+import { UsefulDocumentsComponent } from './pages/useful_documents.component';
+import { ContactUsComponent } from './pages/contact_us.component';
+import { WhoAreUsComponent } from './pages/who_are_us.component';
 
 const appRoutes: Routes = [
-  { path: '', component: HomeComponent },//
+  { path: '', component: HomeComponent },
   { path: 'our_ideas', component: OurIdeasComponent },
+  { path: 'your_contributions', component: YourContributionsComponent },
+  { path: 'rehab', component: RehabComponent},
+  { path: 'join_us', component: JoinUsComponent},
+  { path: 'useful_documents', component: UsefulDocumentsComponent },
+  { path: 'contact_us', component: ContactUsComponent },
+  { path: 'who_are_us', component: WhoAreUsComponent }
 ];
 
 @NgModule({
@@ -52,7 +64,13 @@ const appRoutes: Routes = [
     ClientsComponent,
     FooterComponent,
     HomeComponent,
-    OurIdeasComponent
+    OurIdeasComponent,
+    YourContributionsComponent,
+    RehabComponent,
+    JoinUsComponent,
+    UsefulDocumentsComponent,
+    ContactUsComponent,
+    WhoAreUsComponent
   ],
   imports: [
     BrowserModule,
