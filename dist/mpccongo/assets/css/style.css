@@ -2651,6 +2651,7 @@ ul.statistics-list .count{
     background-position: 50% 50%;
     -webkit-background-size: cover;
     background-size: cover;
+    top: -52px;
     -webkit-backface-visibility: hidden;
 }
 
