@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Location } from "@angular/common";
 
@@ -8,10 +8,12 @@ import { Location } from "@angular/common";
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  @Input() bgBanner : string;
   route : string;
 
   constructor(location: Location, router: Router) {
-    
+    this.bgBanner = 'x';
+
     router.events.subscribe(val => {
       this.route = location.path();
     });

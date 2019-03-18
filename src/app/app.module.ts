@@ -31,6 +31,7 @@ import { JoinUsComponent } from './pages/join_us.component';
 import { UsefulDocumentsComponent } from './pages/useful_documents.component';
 import { ContactUsComponent } from './pages/contact_us.component';
 import { WhoAreUsComponent } from './pages/who_are_us.component';
+import { BannerAreaComponent } from './container/banner-area/banner-area.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -70,7 +71,8 @@ const appRoutes: Routes = [
     JoinUsComponent,
     UsefulDocumentsComponent,
     ContactUsComponent,
-    WhoAreUsComponent
+    WhoAreUsComponent,
+    BannerAreaComponent
   ],
   imports: [
     BrowserModule,

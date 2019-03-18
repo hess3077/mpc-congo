@@ -3,8 +3,9 @@
   <app-header></app-header> <!-- Header -->
   <app-navigation></app-navigation> <!-- Navigation -->
   <app-carousel *ngIf="!route"></app-carousel> <!-- Carousel -->
-
+  
   <section *ngIf="route" id="main-container" class="main-container">
+      <app-banner-area bgBanner="1985" *ngIf="route=='/join_us' || route=='/contact_us'"></app-banner-area>
       <div *ngIf="route" class="container">
         <div *ngIf="route" class="row">
             <router-outlet></router-outlet>
