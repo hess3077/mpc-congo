@@ -17,6 +17,8 @@ export class AppComponent {
 
   constructor(location: Location, router: Router) {
     this.pages_meta = { 
+      '/': {'title' : 'Accueil'},
+      '': {'title' : 'NULL'},
       '/our_ideas': {'title' : 'Nos idées'},
       '/your_contributions': {'title' : 'Vos contributions'},
       '/rehab': {'title' : 'Desintox'},
@@ -25,9 +27,6 @@ export class AppComponent {
       '/contact_us': {'title' : 'Contact'},
       '/who_are_us': {'title': 'Qui sommes-nous'}
     };
-
-    console.log(this.pages_meta);
-    console.log(this.pages_meta['/join_us']);
 
     router.events.subscribe(val => {
       this.route = location.path();
