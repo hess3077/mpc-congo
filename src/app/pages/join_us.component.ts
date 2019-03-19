@@ -6,10 +6,8 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./join_us.component.scss']
 })
 export class JoinUsComponent implements OnInit {
-  @Input() bgBanner : string;
 
-  constructor() { 
-    this.bgBanner = 'integration/5-Adherer/engagement.jpg';
+  constructor() {
   }
 
   ngOnInit() {

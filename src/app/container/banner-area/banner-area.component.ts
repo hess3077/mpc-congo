@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-banner-area',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./banner-area.component.scss']
 })
 export class BannerAreaComponent implements OnInit {
+  @Input() bgBanner : string;
 
   constructor() { }
 
