@@ -4,7 +4,7 @@
   <app-navigation></app-navigation> <!-- Navigation -->
   <app-carousel *ngIf="!route"></app-carousel> <!-- Carousel -->
   <app-banner-area [bgBanner]="getBanner(route)" *ngIf="pageAuthorizedBanner"></app-banner-area>
-  <app-breadcrumb *ngIf="route" [pageAuthorizedBanner]="pageAuthorizedBanner"></app-breadcrumb>
+  <app-breadcrumb *ngIf="route" [pageAuthorizedBanner]="pageAuthorizedBanner" [title]="title_page" [route]="route"></app-breadcrumb>
 
   <div *ngIf="route" class="container">
     <div *ngIf="route" class="row">

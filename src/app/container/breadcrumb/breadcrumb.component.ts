@@ -7,6 +7,8 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class BreadcrumbComponent implements OnInit {
   @Input() pageAuthorizedBanner : boolean;
+  @Input() title : Object;
+  @Input() route : string;
 
   constructor() { }
 

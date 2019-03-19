@@ -10,14 +10,29 @@ import { Location } from "@angular/common";
 export class AppComponent {
   @Input() bgBanner : string;
   pages : string[];
+  pages_meta : Object;
+  title_page : string;
   pageAuthorizedBanner : boolean;
   route : string;
 
   constructor(location: Location, router: Router) {
+    this.pages_meta = { 
+      '/our_ideas': {'title' : 'Nos idées'},
+      '/your_contributions': {'title' : 'Vos contributions'},
+      '/rehab': {'title' : 'Desintox'},
+      '/join_us': {'title' : 'Adhérer'},
+      '/useful_documents': {'title' : 'Documents utiles'},
+      '/contact_us': {'title' : 'Contact'},
+      '/who_are_us': {'title': 'Qui sommes-nous'}
+    };
+
+    console.log(this.pages_meta);
+    console.log(this.pages_meta['/join_us']);
 
     router.events.subscribe(val => {
       this.route = location.path();
       this.pageAuthorizedBanner = this.getPagesAuthorizedBanner(this.route);
+      this.title_page = this.pages_meta[this.route].title;
     });
   }
 
