@@ -9,14 +9,22 @@ import { Location } from "@angular/common";
 })
 export class AppComponent {
   @Input() bgBanner : string;
+  pages : string[];
+  pageAuthorizedBanner : boolean;
   route : string;
 
   constructor(location: Location, router: Router) {
-    //this.bgBanner = 'x';
 
     router.events.subscribe(val => {
       this.route = location.path();
+      this.pageAuthorizedBanner = this.getPagesAuthorizedBanner(this.route);
     });
+  }
+
+  getPagesAuthorizedBanner(route : string) {
+    this.pages = ['/join_us', '/contact_us', '/rehab', '/who_are_us'];
+
+    return this.pages.includes(route);
   }
 
   getBanner(page : string) {

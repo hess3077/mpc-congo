@@ -2651,7 +2651,6 @@ ul.statistics-list .count{
     background-position: 50% 50%;
     -webkit-background-size: cover;
     background-size: cover;
-    top: -52px;
     -webkit-backface-visibility: hidden;
 }
 
@@ -2705,7 +2704,7 @@ ul.statistics-list .count{
    color: #222;
    font-weight: 600;
    font-family: 'Noto Serif', serif;
-   justify-content: center;
+   justify-content: left;
 }
 .breadcrumb>li+li:before {
    color: #222;
